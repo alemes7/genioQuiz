@@ -1,0 +1,45 @@
+/* Estilo do número da questão */
+.questionNumber {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #4B0082;
+    background-color: #D8BFD8;
+    border: 2px solid #8B0000;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo das opções de resposta */
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.options button {
+    width: 100%;
+    padding: 25px;
+    font-size: 3rem;
+    background-color: #a52a2a;
+    font-family: 'Just Me Again Down Here', cursive;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.options button:hover {
+    background-color: #8b0000;
+    transform: scale(1.05);
+}

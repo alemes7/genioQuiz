@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .credits {
+        font-size: 45px;
+        text-align: center;
+    }
+
+
+    /* seta do lado esquerdo */
+
+    .seta {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 40px;
+        left: 10px;
+        font-size: 20px;
+        background-color: #a52a2a;
+        color: white;
+        border: none;
+    }
+
+    .seta:hover {
+        background-color: #8B0000;
+    }
+
+    @media (max-width: 600px) {
+        .credits {
+            font-size: 30px;
+        }
+
+    }
+</style>
+
+<body>
+    <img class="imgBrasil" src="brasil.png" alt="Bandeira do Brasil">
+
+    <!-- botao de voltar -->
+    <button class="seta" onclick="window.location.href='index.html'">←</button>
+
+    <h1>Créditos</h1>
+
+    <div class="credits">
+        <p>Alexandre Lemes N 01</p>
+        <p>Beatriz Brolo N 03</p>
+        <p>3º Ano A</p>
+        <p>Trabalho de Física (Prof. Paula) e Geografia (Prof. Diego)</p>
+        <p>Obrigado a quem jogou!</p>
+    </div>
+</body>
+
+</html>

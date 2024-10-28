@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 2 - Energia Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="respostas.css">
+    <style>
+        /* Estilo geral */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 4rem;
+            text-align: center;
+            max-width: 80%;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+            p {
+                font-size: 2rem;
+            }
+
+            .options {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .options button {
+                padding: 10px;
+                max-width: 300px;
+            }
+
+            .questionNumber {
+                font-size: 2.5rem;
+                width: 60px;
+                height: 60px;
+            }
+
+            footer {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Número da questão no canto superior esquerdo -->
+    <div class="questionNumber">2</div>
+
+    <p>Na física, qual grandeza está relacionada diretamente à capacidade de realizar trabalho?</p>
+    <div class="options">
+        <button onclick="checkAnswer('A')">A) Potência</button>
+        <button onclick="checkAnswer('B')">B) Energia</button>
+        <button onclick="checkAnswer('C')">C) Força</button>
+        <button onclick="checkAnswer('D')">D) Temperatura</button>
+    </div>
+
+    <footer>
+        Todos os direitos reservados © Ale e Brolo
+    </footer>
+
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 'B') {
+                window.location.href = 'pergunta3.html';
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+</body>
+</html>

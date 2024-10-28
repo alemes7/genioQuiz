@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 6 - Energia Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo geral */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 4rem;
+            text-align: center;
+            max-width: 80%;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo do número da questão */
+        .questionNumber {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #4B0082;
+            background-color: #D8BFD8;
+            border: 2px solid #8B0000;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Estilo das opções de resposta */
+        .options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            align-items: center;
+            width: 100%;
+            max-width: 1600px;
+        }
+
+        .options button {
+            width: 100%;
+            padding: 25px;
+            font-size: 3rem;
+            background-color: #a52a2a;
+            font-family: 'Just Me Again Down Here', cursive;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .options button:hover {
+            background-color: #8b0000;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            p {
+                font-size: 2rem;
+            }
+
+            .options {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .options button {
+                padding: 10px;
+                max-width: 400px;
+                font-size: 30px;
+            }
+
+            .questionNumber {
+                font-size: 2.5rem;
+                width: 60px;
+                height: 60px;
+            }
+
+            footer {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Número da questão no canto superior esquerdo -->
+    <div class="questionNumber">6</div>
+
+    <p>O que acontece quando você converte 100% de uma fonte de energia em trabalho útil?</p>
+    <div class="options">
+        <button onclick="checkAnswer('A')">A) Você quebra a segunda lei da termodinâmica</button>
+        <button onclick="checkAnswer('B')">B) O mundo entra em colapso</button>
+        <button onclick="checkAnswer('C')">C) Você ganha energia infinita</button>
+        <button onclick="checkAnswer('D')">D) Isso é impossível</button>
+    </div>
+
+    <footer>
+        Todos os direitos reservados © Ale e Brolo
+    </footer>
+
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 'D') {
+                window.location.href = 'pergunta7.html';
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+</body>
+</html>
